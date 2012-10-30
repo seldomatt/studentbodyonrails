@@ -1,0 +1,21 @@
+<h1>Listing indexstudents</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @indexstudents.each do |indexstudent| %>
+  <tr>
+    <td><%= link_to 'Show', indexstudent %></td>
+    <td><%= link_to 'Edit', edit_indexstudent_path(indexstudent) %></td>
+    <td><%= link_to 'Destroy', indexstudent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Indexstudent', new_indexstudent_path %>

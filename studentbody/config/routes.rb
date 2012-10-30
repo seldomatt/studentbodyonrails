@@ -1,4 +1,6 @@
 Studentbody::Application.routes.draw do
+  resources :indexstudents
+
   resources :students
 
   # The priority is based upon order of creation:

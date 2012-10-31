@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
   # GET /students/1
   # GET /students/1.json
   def show
-    @student = Student.find(params[:id])
+    @student = Student.find_by_last_name(params[:fullname].split("-").last.capitalize)
 
     respond_to do |format|
       format.html # show.html.erb

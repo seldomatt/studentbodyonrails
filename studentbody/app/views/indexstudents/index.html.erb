@@ -24,7 +24,7 @@
         <% @indexstudents.each_with_index do |student, index|  %>
 
         <div class="one_third <%= "last" if (index + 1) % 3 == 0 %>">
-          <a href="/<%= "#{student.first_name}-#{student.last_name}" %>"><img class="person" src="assets/<%= student.image_url %>" alt="<%= "#{student.first_name} #{student.last_name}" %>"/>
+          <a href="students/<%= "#{student.first_name}-#{student.last_name}" %>"><img class="person" src="assets/<%= student.image_url %>" alt="<%= "#{student.first_name} #{student.last_name}" %>"/>
             <div class="name-position">
               <h2><%= "#{student.first_name} #{student.last_name}" %></h2>
               <div class="position"><%= student.tagline %></div>
